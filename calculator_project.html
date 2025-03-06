@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator Project</title>
+  <style>
+    body{
+      background-color: rgb(132, 201, 29);
+    }
+    .wrapper {
+    width: 250px;
+    border: 2px solid black;
+    border-radius:8px;
+    margin-top:10%;
+    margin-left:40%;
+    background-color: aqua;
+}
+    .display{
+      margin-top:15px;
+      margin-left:20px;
+      height:35px;
+      width:200px;
+      border:2px solid black;
+      border-radius:5px;
+    }
+    .caluclator_button{
+      display:flex;
+      justify-content: center;
+      margin-right:23px;
+      flex-wrap: wrap;
+      margin-top:5px;
+      margin-bottom:5px;
+    }
+    .caluclator_button button{
+      margin-left:20px;
+      margin-top: 10px;
+      width:50px;
+      height:50px;
+      border: 2px solid black;
+      border-radius:5px;
+      background-color: black;
+      color:white;
+      font-size: medium;
+    }
+    .caluclator_button button:hover{
+      background-color: white;
+      color:blue;
+      border:2px solid orangered;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    
+    <input  class="display"type="text" readonly>
+  
+    <div class="caluclator_button">
+      <button class="txt" onclick="text_container = '';
+      document.querySelector('.display').value = text_container;"> c </button>
+
+      <button class="txt" onclick="text_container = text_container + '1';
+           document.querySelector('.display').value = text_container;
+           "> 1 </button>
+      <button class="txt"onclick="text_container = text_container + '2';
+           document.querySelector('.display').value = text_container";> 2 </button>
+
+      <button class="txt" onclick="text_container = text_container + '+';
+           document.querySelector('.display').value = text_container";> + </button>
+
+      <button class="txt"onclick="text_container = text_container + '3';
+           document.querySelector('.display').value = text_container"; > 3 </button>
+
+      <button class="txt"onclick="text_container = text_container + '4';
+           document.querySelector('.display').value = text_container"; > 4 </button>
+
+      <button class="txt"onclick="text_container = text_container + '-';
+           document.querySelector('.display').value = text_container"; > - </button>
+
+      <button class="txt"onclick="text_container = text_container + '5';
+           document.querySelector('.display').value = text_container"; > 5 </button>
+
+      <button class="txt"onclick="text_container = text_container + '6';
+           document.querySelector('.display').value = text_container"; > 6 </button>
+
+      <button class="txt"onclick="text_container = text_container + '*';
+           document.querySelector('.display').value = text_container"; > * </button>
+
+      <button class="txt"onclick="text_container = text_container + '7';
+           document.querySelector('.display').value = text_container"; > 7 </button>
+
+      <button class="txt"onclick="text_container = text_container + '8';
+           document.querySelector('.display').value = text_container"; > 8 </button>
+
+      <button class="txt"onclick="text_container = text_container + '/';
+           document.querySelector('.display').value = text_container"; > / </button>
+
+      <button class="txt" onclick="let result = eval(text_container);
+      document.querySelector('.display').value = result"> = </button>
+
+      <button class="txt"onclick="text_container = text_container + '9';
+           document.querySelector('.display').value = text_container"; > 9 </button>
+
+      <button class="txt"onclick="text_container = text_container + '0';
+           document.querySelector('.display').value = text_container"; > 0 </button>
+
+      <button class="txt"onclick="text_container = text_container + '.';
+           document.querySelector('.display').value = text_container"; > . </button>
+
+    </div>
+  </div>
+  <script>
+    let text_container = '';
+    document.querySelector('.text').value = text_container;
+  </script>
+</body>
+</html>
